@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my-hostel - Réservation d'hôtels en ligne</title>
+    <title>my-hostel - Online Hotel Booking</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./style/bootstrap-5.3.5-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -18,69 +17,65 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="" alt="your Logo" height="40">
+                    <img src="" alt="Your Logo" height="40">
                 </a>
 
-                <!-- Bouton menu mobile -->
+                <!-- Mobile menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navigation -->
+                <!-- Navigation links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#accueil">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reservations">Réservations</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Chambres/Services
+                                Rooms/Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#chambres-services">Chambres Standard</a></li>
-                                <li><a class="dropdown-item" href="#chambres-services">Suites</a></li>
-                                <li><a class="dropdown-item" href="#chambres-services">Services</a></li>
+                                <li><a class="dropdown-item" href="#rooms-services">Standard Rooms</a></li>
+                                <li><a class="dropdown-item" href="#rooms-services">Suites</a></li>
+                                <li><a class="dropdown-item" href="#rooms-services">Services</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#galerie">Galerie/Photos</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#apropos">À propos</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                     </ul>
 
-                    <!-- Boutons connexion/inscription -->
+                    <!-- Login/Register buttons -->
                     <div class="d-flex ms-lg-3">
                         <button class="btn btn-outline-primary me-2" data-bs-toggle="modal"
-                            data-bs-target="#connexionModal">Connexion</button>
+                            data-bs-target="#loginModal">Login</button>
                         <button class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#inscriptionModal">Inscription</button>
+                            data-bs-target="#registerModal">Register</button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Contenu principal sera ajouté plus tard -->
+    <!-- Main content -->
     <main class="mt-5 pt-5">
-        <!-- Modal Connexion -->
+        <!-- Login Modal -->
         <section>
-            <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="connexionModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="connexionModalLabel">Connexion</h5>
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -90,44 +85,44 @@
                                     <input type="email" class="form-control" id="loginEmail" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="loginPassword" class="form-label">Mot de passe</label>
+                                    <label for="loginPassword" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="loginPassword" required>
                                 </div>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="rememberMe">
-                                    <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
                             </form>
                             <div class="text-center mt-3">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#inscriptionModal"
-                                    data-bs-dismiss="modal">Créer un compte</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                    data-bs-dismiss="modal">Create an account</a>
                                 <span class="mx-2">|</span>
-                                <a href="#">Mot de passe oublié ?</a>
+                                <a href="#">Forgot password?</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal Inscription -->
-            <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel"
+            <!-- Register Modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="inscriptionModalLabel">Inscription</h5>
+                            <h5 class="modal-title" id="registerModalLabel">Register</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="firstName" class="form-label">Prénom</label>
+                                        <label for="firstName" class="form-label">First Name</label>
                                         <input type="text" class="form-control" id="firstName" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="lastName" class="form-label">Nom</label>
+                                        <label for="lastName" class="form-label">Last Name</label>
                                         <input type="text" class="form-control" id="lastName" required>
                                     </div>
                                 </div>
@@ -136,18 +131,18 @@
                                     <input type="email" class="form-control" id="signupEmail" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="signupPassword" class="form-label">Mot de passe</label>
+                                    <label for="signupPassword" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="signupPassword" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirmPassword" class="form-label">Confirmer le mot de passe</label>
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
                                     <input type="password" class="form-control" id="confirmPassword" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
                             </form>
                             <div class="text-center mt-3">
-                                <p>Déjà un compte ? <a href="#" data-bs-toggle="modal" data-bs-target="#connexionModal"
-                                        data-bs-dismiss="modal">Se connecter</a></p>
+                                <p>Already have an account? <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
                             </div>
                         </div>
                     </div>
@@ -155,53 +150,84 @@
             </div>
         </section>
 
-        <!-- Section Accueil (déjà présente avec la Hero Section) -->
-        <section id="accueil" class="py-5">
+        <!-- Hero Section -->
+        <section id="home" class="py-5">
             <div class="container">
-                <!-- Présentation texte + image -->
                 <div class="row align-items-center mb-5">
                     <div class="col-lg-6">
-                        <h1 class="display-4 fw-bold mb-4">Bienvenue chez <span class="text-primary">My Hostel</span>
-                        </h1>
-                        <p class="lead mb-4">Découvrez un havre de paix au cœur de la ville, où luxe et confort se
-                            rencontrent.</p>
+                        <h1 class="display-4 fw-bold mb-4">Welcome to <span class="text-primary">My Hostel</span></h1>
+                        <p class="lead mb-4">Discover a peaceful haven in the heart of the city, where luxury meets
+                            comfort.</p>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Chambres haut de
-                                gamme avec vue exceptionnelle</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Service personnalisé
-                                24h/24</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Spa et centre de
-                                remise en forme</li>
-                            <li><i class="fas fa-check-circle text-primary me-2"></i> Restaurant gastronomique étoilé
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Premium rooms with
+                                stunning views</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 24/7 personalized
+                                service</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Spa and fitness
+                                center</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> Michelin-star gourmet restaurant
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                        <img src="" class="img-fluid rounded-3 shadow"
-                            alt="Hall de l'hôtel">
+                        <img src="" class="img-fluid rounded-3 shadow" alt="Hotel lobby">
                     </div>
                 </div>
-
-                <!-- Votre formulaire de recherche existant ici -->
             </div>
-        </section>>
+        </section>
 
-        
+        <!-- Rooms/Services Section -->
+        <section id="rooms-services" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Rooms & Services</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Standard Room">
+                            <div class="card-body">
+                                <h5 class="card-title">Standard Room</h5>
+                                <p class="card-text">Cozy and affordable with essential amenities for a relaxing stay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Suite">
+                            <div class="card-body">
+                                <h5 class="card-title">Suite</h5>
+                                <p class="card-text">Spacious suite with a separate living area, ideal for families or
+                                    longer stays.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Services">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotel Services</h5>
+                                <p class="card-text">Free Wi-Fi, room service, spa, laundry, airport shuttle and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer sera ajouté plus tard -->
+    <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container">
             <div class="row g-4">
-                <!-- Colonne 1 : Logo + Description -->
+                <!-- Column 1: Logo + Description -->
                 <div class="col-lg-3 col-md-6 mb-4 text-white">
                     <div class="footer-logo mb-3">
                         <img src="" alt="Hostel Logo" height="40">
                         <span class="brand-name text-white">Hostel</span>
                     </div>
-                    <p class="text-white">Votre havre de paix en plein cœur de la ville depuis 1985.</p>
-
-                    <!-- Réseaux sociaux -->
+                    <p class="text-white">Your peaceful retreat in the heart of the city since 1985.</p>
                     <div class="social-icons mt-4">
                         <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
@@ -210,48 +236,38 @@
                     </div>
                 </div>
 
-                <!-- Colonne 2 : Liens rapides -->
+                <!-- Column 2: Quick Links -->
                 <div class="col-lg-2 col-md-6 mb-4 navigation">
                     <h5 class="text-uppercase mb-4">Navigation</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#accueil" class="text-white">Accueil</a></li>
-                        <li class="mb-2"><a href="#reservations" class="text-white">Réservations</a></li>
-                        <li class="mb-2"><a href="#chambres-services" class="text-white">Chambres/Services</a></li>
-                        <li class="mb-2"><a href="#galerie" class="text-white">Galerie</a></li>
+                        <li class="mb-2"><a href="#home" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#reservations" class="text-white">Bookings</a></li>
+                        <li class="mb-2"><a href="#rooms-services" class="text-white">Rooms/Services</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-white">Gallery</a></li>
                         <li class="mb-2"><a href="#contact" class="text-white">Contact</a></li>
-                        <li><a href="#apropos" class="text-white">À propos</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
                     </ul>
                 </div>
 
-                <!-- Colonne 3 : Contact -->
+                <!-- Column 3: Contact -->
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <h5 class="text-uppercase mb-4">Contactez-nous</h5>
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
                     <ul class="list-unstyled text-white">
-                        <li class="mb-3">
-                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
-                            123 Avenue des Hôteliers, 75008 Paris
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-phone-alt me-2 text-primary"></i>
-                            <a href="tel:+33123456789" class="text-white">+33 1 23 45 67 89</a>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-envelope me-2 text-primary"></i>
-                            <a href="mailto:contact@admin.com" class="text-white">contact@admin.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-clock me-2 text-primary"></i>
-                            Réception 24h/24
-                        </li>
+                        <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Hotel Avenue, Paris
+                            75008</li>
+                        <li class="mb-3"><i class="fas fa-phone-alt me-2 text-primary"></i> <a href="tel:+33123456789"
+                                class="text-white">+33 1 23 45 67 89</a></li>
+                        <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> <a
+                                href="mailto:contact@admin.com" class="text-white">contact@admin.com</a></li>
+                        <li><i class="fas fa-clock me-2 text-primary"></i> Reception open 24/7</li>
                     </ul>
                 </div>
 
-                <!-- Colonne 4 : Newsletter + Paiements -->
+                <!-- Column 4: Newsletter + Payments -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5 class="text-uppercase mb-4">Newsletter</h5>
-                    <p class="text-white">Abonnez-vous pour recevoir nos offres exclusives :</p>
-
-                    <h5 class="text-uppercase mb-3">Paiements sécurisés</h5>
+                    <p class="text-white">Subscribe to receive our exclusive offers:</p>
+                    <h5 class="text-uppercase mb-3">Secure Payments</h5>
                     <div class="payment-methods">
                         <img src="" alt="Carte Bleue" class="me-2">
                         <img src="" alt="Visa" class="me-2">
@@ -263,17 +279,16 @@
 
             <hr class="my-4 bg-secondary">
 
-            <!-- Ligne inférieure : Mentions légales -->
+            <!-- Legal -->
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="small text-white mb-0">&copy; 2023 Hostel. Tous droits réservés.</p>
+                    <p class="small text-white mb-0">&copy; 2023 Hostel. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <ul class="list-inline small mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-white">Mentions légales</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white">CGU</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white">Politique de confidentialité</a>
-                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Legal Notice</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
                         <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
                     </ul>
                 </div>
@@ -281,10 +296,9 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle avec Popper -->
-    
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="./style/bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
-    
+
 </body>
 
 </html>
