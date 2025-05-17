@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="../style/bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./custom/style/dashboard.css">
+    <script src="./custom/script/load-content.js" defer ></script>
 </head>
 
 <body>
@@ -42,46 +43,18 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <h5 class="text-center">Admin Menu</h5>
-        <a href="dashboard.html">🏠 Dashboard</a>
-        <a href="rooms.html">🛏️ Manage Rooms</a>
-        <a href="bookings.html">📋 View Bookings</a>
-        <a href="clients.html">👥 Manage Clients</a>
-        <a href="payments.html">💳 Track Payments</a>
-        <a href="reports.html">📊 Reports</a>
-        <a href="../common/logout.html" class="text-danger">🚪 Logout</a>
+        <a href="./dashboard.html">🏠 Dashboard</a>
+        <a href="#" data-page="room">🛏️ Manage Rooms</a>
+        <a href="#" data-page="bookings">📋 View Bookings</a>
+        <a href="#" data-page="clients">👥 Manage Clients</a>
+        <a href="#" data-page="payments">💳 Track Payments</a>
+        <a href="#" data-page="reports">📊 Reports</a>
+        <a href="#" data-page="logout" class="text-danger">🚪 Logout</a>
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <h2>Welcome, Admin 👋</h2>
-        <p>This is your dashboard content.</p>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card text-bg-primary mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Rooms</h5>
-                        <p class="card-text">45</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-bg-success mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Bookings Today</h5>
-                        <p class="card-text">12</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-bg-warning mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pending Payments</h5>
-                        <p class="card-text">3</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Main content -->
+    <div class="content" id="main-content">
+        <h1>Welcome to Dashboard Admin</h1>
     </div>
 
     <!-- Bootstrap JS -->
