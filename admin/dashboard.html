@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../style/bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./custom/style/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🏠 HostelAdmin</a>
+
+            <form class="d-none d-md-flex ms-auto me-3">
+                <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        🔧 Options
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">👤 Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h5 class="text-center">Admin Menu</h5>
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="rooms.html">🛏️ Manage Rooms</a>
+        <a href="bookings.html">📋 View Bookings</a>
+        <a href="clients.html">👥 Manage Clients</a>
+        <a href="payments.html">💳 Track Payments</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="../common/logout.html" class="text-danger">🚪 Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Welcome, Admin 👋</h2>
+        <p>This is your dashboard content.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card text-bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Rooms</h5>
+                        <p class="card-text">45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bookings Today</h5>
+                        <p class="card-text">12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-warning mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pending Payments</h5>
+                        <p class="card-text">3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../style/bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
