@@ -41,3 +41,41 @@
 
 ---
 
+### 🔝 Header / Navbar (already defined)
+
+* **Home**
+* **Actuality** → News, announcements
+* **Dashboard** → Main control panel
+* **My Profile**
+* **Logout**
+
+✅ *Simple and focused*
+
+---
+
+### 📊 Client Dashboard – What to Include
+
+* **Welcome Message** → "Hello, \[Client Name]"
+
+* **Summary Cards**:
+
+  * **Current Booking** (Room type, dates)
+  * **Payment Status** (Paid / Pending)
+  * **Booking History** (Last 3 records)
+
+* **Buttons / Quick Links**:
+
+  * 📅 **Book a Room**
+  * 💳 **Make a Payment**
+  * 📁 **View Full History**
+
+* **Notifications** → Upcoming check-in/out, payment reminders
+
+* **Contact Support** → Quick help or contact button
+
+✅ *One page to see everything + quick actions*
+
+---
+
+
+
