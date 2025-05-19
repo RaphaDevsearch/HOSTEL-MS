@@ -34,8 +34,13 @@
                             <a class="nav-link" href="dashboard.html">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My Profile</a>
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasProfile" role="button"
+                                aria-controls="offcanvasProfile">
+                                My Profile
+                            </a>
                         </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -218,6 +223,22 @@
 
         </section>
 
+        <!-- my profil off canva -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProfile"
+            aria-labelledby="offcanvasProfileLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasProfileLabel">My Profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Your profile info here -->
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john@example.com</p>
+                <p><strong>Role:</strong> Client</p>
+                <a href="#" class="btn btn-outline-primary w-100 mt-3">Edit Profile</a>
+            </div>
+        </div>
 
 
     </main>
