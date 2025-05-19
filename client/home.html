@@ -14,7 +14,7 @@
     <!-- Header -->
     <header class="bg-primary text-white py-3">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="home.html">HostelMgmt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clientNavbar"
@@ -28,7 +28,7 @@
                             <a class="nav-link active" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Actuality</a>
+                            <a class="nav-link" href="#actuality">Actuality</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="dashboard.html">Dashboard</a>
@@ -45,46 +45,180 @@
 
     <!-- Main -->
     <main class="py-5">
-        <section class="container">
-            <h2 class="mb-4">Welcome, Client!</h2>
-            <p>This is your client homepage. From here, you can view available rooms, check your bookings, and more.</p>
-        </section>
 
-        <section class="my-5 p-5">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 b py-3 rounded shadow ">
-                        <h1>Lorem, ipsum dolor.</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint architecto porro quam
-                            reiciendis
-                            excepturi laborum eius blanditiis quibusdam vero molestiae, voluptatum necessitatibus,
-                            itaque
-                            perferendis. Excepturi quidem reprehenderit quisquam eligendi nihil.
-                            Libero repellat fugit quibusdam dolorem officia facere suscipit? Animi impedit incidunt odit
-                            autem deleniti explicabo debitis sed assumenda, cumque iste asperiores ex repudiandae
-                            corrupti
-                            sequi, sint ut veniam illo perspiciatis.
+        <!-- home & herro -->
+        <section class="my-5">
+            <div class="container bg-light">
+                <h1>Home clients</h1>
+                <p class="text-md-start lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio porro praesentium blanditiis quas
+                    perspiciatis nisi eaque qui molestiae non magnam vel assumenda sint vero exercitationem cupiditate
+                    dolor alias, eveniet nobis?
+                    Officiis perspiciatis, atque reiciendis vitae ducimus illo et consequatur suscipit, beatae enim
+                    libero debitis fugit! Iure officiis asperiores tempore ut natus? Neque laudantium, provident hic
+                    eveniet ipsam accusantium porro ullam.
+                    Laboriosam numquam aliquid ut tempore, reprehenderit minus officia reiciendis quibusdam suscipit
+                    cupiditate hic dolorem labore nostrum magni minima quam placeat ab quo tempora possimus at expedita
+                    soluta? Et, qui quos.
+                </p>
+                <div class="row g-4 my-5 bg-white shadow rounded-3">
+                    <div class="col-md-4">
+                        <p class="h1 text-start">Hello world</p>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat dignissimos inventore
+                            eum eos dolorem ex, fugiat iure necessitatibus, quidem sit voluptas sequi voluptate magni.
+                            Voluptatum sint in deserunt eaque.
+                            Non totam error dignissimos repellendus? Numquam alias esse aspernatur ipsam ipsum minima
+                            aut harum voluptatum magni expedita illum quisquam nemo officia ad, repellendus quibusdam
+                            sed quidem? Voluptatibus enim fuga atque.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="h1 text-start">Hello world</p>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat dignissimos inventore
+                            eum eos dolorem ex, fugiat iure necessitatibus, quidem sit voluptas sequi voluptate magni.
+                            Voluptatum sint in deserunt eaque.
+                            Non totam error dignissimos repellendus? Numquam alias esse aspernatur ipsam ipsum minima
+                            aut harum voluptatum magni expedita illum quisquam nemo officia ad, repellendus quibusdam
+                            sed quidem? Voluptatibus enim fuga atque.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="h1 text-start">Hello world</p>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat dignissimos inventore
+                            eum eos dolorem ex, fugiat iure necessitatibus, quidem sit voluptas sequi voluptate magni.
+                            Voluptatum sint in deserunt eaque.
+                            Non totam error dignissimos repellendus? Numquam alias esse aspernatur ipsam ipsum minima
+                            aut harum voluptatum magni expedita illum quisquam nemo officia ad, repellendus quibusdam
+                            sed quidem? Voluptatibus enim fuga atque.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container my-5">
-            <h1 class="head">Lorem, ipsum.</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt reiciendis atque tenetur
-                at quibusdam itaque odit dolore repellendus quasi, facere velit quod aut commodi eligendi. Sint optio
-                doloribus dignissimos.
-                Quos obcaecati optio rerum cupiditate laborum consequatur nesciunt eum adipisci vitae nihil? Debitis
-                rerum eos corrupti repellendus, dolorum, ea itaque saepe voluptas eaque, facere accusamus voluptatum rem
-                eveniet tempora nesciunt?
-                Ad aliquam repudiandae nesciunt velit, nobis porro incidunt reprehenderit maiores praesentium temporibus
-                quae sit exercitationem. Error quaerat quo fugit deserunt quod architecto corrupti repellat possimus
-                recusandae vero, nobis expedita odit.
-            </p>
+        <!-- actuality -->
+        <section>
+            <div class="container my-5" id="actuality">
+                <h2 class="mb-4">📢 Actuality</h2>
+
+                <!-- 📅 Upcoming Events → Accordion -->
+                <section class="mb-5">
+                    <h4>📅 Upcoming Events</h4>
+                    <div class="accordion" id="eventsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="eventOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEventOne" aria-expanded="true">
+                                    Maintenance Schedule
+                                </button>
+                            </h2>
+                            <div id="collapseEventOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#eventsAccordion">
+                                <div class="accordion-body">
+                                    The hostel will undergo routine maintenance on May 22nd and 23rd.<br>
+                                    <small class="text-muted">Posted: May 18, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 🆕 New Services → Cards -->
+                <section class="mb-5">
+                    <h4>🆕 New Services</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Laundry Room</h5>
+                                    <p class="card-text">Modern laundry now open on the 1st floor for all residents.</p>
+                                    <small class="text-muted">Posted: May 15, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Upgraded Wi-Fi</h5>
+                                    <p class="card-text">All rooms now have improved high-speed Wi-Fi access.</p>
+                                    <small class="text-muted">Posted: May 14, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 💡 Important Notices → Collapse -->
+                <section class="mb-5">
+                    <h4>💡 Important Notices</h4>
+                    <p>
+                        <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapseNotices"
+                            role="button" aria-expanded="false">
+                            🔍 View Notices
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseNotices">
+                        <div class="card card-body border-warning">
+                            Quiet hours now begin at 9 PM instead of 10 PM. Please respect the new schedule.<br>
+                            <small class="text-muted">Posted: May 12, 2025</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 💬 Messages from Admin → Carousel -->
+                <section class="mb-5">
+                    <h4>💬 Messages from Admin</h4>
+                    <div id="adminCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Welcome to New Residents</h5>
+                                        <p>We’re happy to have you here. Let us know if you need help settling in!</p>
+                                        <small class="text-muted">Posted: May 10, 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Health Safety Notice</h5>
+                                        <p>Please wear masks in common areas until further notice.</p>
+                                        <small class="text-muted">Posted: May 8, 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#adminCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#adminCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- ⚠️ Alerts → Card highlighted -->
+                <section class="mb-5">
+                    <h4 class="text-danger">⚠️ Alerts</h4>
+                    <div class="card border-danger text-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Water Cut Notification</h5>
+                            <p class="card-text">Water will be unavailable on May 20th from 9 AM to 12 PM.</p>
+                            <small class="text-muted">Posted: May 18, 2025</small>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
         </section>
+
+
 
     </main>
 
