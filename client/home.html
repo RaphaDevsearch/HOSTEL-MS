@@ -225,20 +225,64 @@
 
         <!-- my profil off canva -->
 
+        <!-- 📌 Offcanvas Client Profile -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProfile"
             aria-labelledby="offcanvasProfileLabel">
             <div class="offcanvas-header">
-                <h5 id="offcanvasProfileLabel">My Profile</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasProfileLabel">👤 My Profile</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <!-- Your profile info here -->
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Email:</strong> john@example.com</p>
-                <p><strong>Role:</strong> Client</p>
-                <a href="#" class="btn btn-outline-primary w-100 mt-3">Edit Profile</a>
+            <div class="offcanvas-body text-center">
+
+                <!-- 🖼️ Profile Picture -->
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle shadow mb-3" width="100" height="100"
+                    alt="Profile Picture">
+
+                <!-- 👤 Full Name + ID -->
+                <h5>John Doe</h5>
+                <p class="text-muted">ID: CL-2025-001</p>
+
+                <!-- 🔹 Personal Details -->
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <small class="text-muted">📞 Phone</small>
+                            <div>+123 456 7890</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <small class="text-muted">📧 Email</small>
+                            <div>john@example.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2 text-start">
+                    <strong>📅 Date of Birth:</strong><br>
+                    <span>1999-08-15</span>
+                </div>
+
+                <!-- 🔹 Hostel & Room Info -->
+                <div class="mb-2 text-start">
+                    <strong>🏨 Hostel:</strong> Sunrise Block<br>
+                    <strong>🚪 Room:</strong> A-104<br>
+                    <strong>🛏️ Type:</strong> Single Room<br>
+                    <strong>📅 Check-in:</strong> 2025-01-10<br>
+                    <strong>📅 Check-out:</strong> 2025-12-20<br>
+                    <strong>✅ Status:</strong> Active
+                </div>
+
+                <!-- 🔘 Action Buttons -->
+                <div class="d-grid gap-2 d-md-block mt-4 text-start">
+                    <button class="btn btn-outline-primary w-45">✏️ Edit</button>
+                    <button class="btn btn-outline-danger w-45">🔒 Change Password</button>
+                </div>
+
             </div>
         </div>
+
 
 
     </main>
