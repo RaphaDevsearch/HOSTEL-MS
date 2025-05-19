@@ -1,0 +1,29 @@
+.bg-hero {
+    min-height: 90vh;
+    background-image: url('../../../image/img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-clip: border-box;
+    background-blend-mode: lighten;
+    
+}
+
+.hero-title {
+    color: rgb(197, 219, 1);
+    font-size: 5rem;
+}
+
+.hero-body {
+    font-size: 1.6rem;
+    color: white
+}
+
+.hero-btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
