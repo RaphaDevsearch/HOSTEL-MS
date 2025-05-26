@@ -15,40 +15,84 @@
 <body>
 
     <!-- Header -->
-    <header class="bg-primary text-white py-3">
-        <!-- Navbar -->
+    <header class="bg-primary text-white">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="home.html">HostelMgmt</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clientNavbar"
-                    aria-controls="clientNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <!-- Branding -->
+                <a class="navbar-brand fw-bold" href="home.html">🏨 HostelMS Admin</a>
+
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar"
+                    aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="clientNavbar">
-                    <ul class="navbar-nav ms-auto">
+                <!-- Menu Content -->
+                <div class="collapse navbar-collapse" id="adminNavbar">
+                    <!-- Left-side Admin Menu -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#actuality">Actuality</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="dashboard.html">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasProfile" role="button"
-                                aria-controls="offcanvasProfile">
-                                My Profile
-                            </a>
+                            <a class="nav-link" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-side Tools -->
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <!-- Search Bar (optional) -->
+                        <li class="nav-item d-none d-md-block">
+                            <form class="d-flex me-3" role="search">
+                                <input class="form-control form-control-sm" type="search" placeholder="Search..."
+                                    aria-label="Search">
+                            </form>
                         </li>
 
+                        <!-- Notifications -->
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span class="badge bg-danger">3</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">🔔 New booking</a></li>
+                                <li><a class="dropdown-item" href="#">💳 Payment received</a></li>
+                                <li><a class="dropdown-item" href="#">⚠️ System alert</a></li>
+                            </ul>
+                        </li>
 
+                        <!-- Profile Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Admin
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
 
 
     <!-- Main -->
