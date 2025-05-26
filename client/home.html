@@ -245,22 +245,66 @@
 
                 </section>
 
-                <!-- 💡 Important Notices → Collapse -->
+                <!-- 💡 Important Notices → Accordion -->
                 <section class="mb-5">
                     <h4>💡 Important Notices</h4>
-                    <p>
-                        <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapseNotices"
-                            role="button" aria-expanded="false">
-                            🔍 View Notices
-                        </a>
-                    </p>
-                    <div class="collapse" id="collapseNotices">
-                        <div class="card card-body border-warning">
-                            Quiet hours now begin at 9 PM instead of 10 PM. Please respect the new schedule.<br>
-                            <small class="text-muted">Posted: May 12, 2025</small>
+                    <div class="accordion" id="importantNotices">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeOne" aria-expanded="true"
+                                    aria-controls="collapseNoticeOne">
+                                    Quiet Hours Adjustment
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    Quiet hours now begin at <strong>9 PM</strong> instead of 10 PM. Please respect the
+                                    new schedule.<br>
+                                    <small class="text-muted">Posted: May 12, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeTwo" aria-expanded="false"
+                                    aria-controls="collapseNoticeTwo">
+                                    Laundry Room Closure
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    The laundry room will be temporarily closed for deep cleaning on <strong>May
+                                        25</strong> from 8 AM to 2 PM.<br>
+                                    <small class="text-muted">Posted: May 20, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeThree" aria-expanded="false"
+                                    aria-controls="collapseNoticeThree">
+                                    Key Card Replacement
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeThree" class="accordion-collapse collapse"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    Residents experiencing issues with their key cards can request a replacement at the
+                                    admin office from <strong>9 AM to 5 PM</strong> daily.<br>
+                                    <small class="text-muted">Posted: May 21, 2025</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+
 
                 <!-- 💬 Messages from Admin → Carousel -->
                 <section class="mb-5">
