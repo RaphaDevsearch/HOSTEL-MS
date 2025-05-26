@@ -87,17 +87,44 @@
 
 
 
-    <main class="container mt-5 pt-4">
+    <main>
 
-        <!-- 1. 👋 Welcome Message -->
-        <section id="welcome" class="mb-4">
-            <h2>👋 Welcome back, <span class="text-primary">Admin Name</span></h2>
-            <hr>
+        <!-- admin hero -->
+        <section class="vh-100 d-flex align-items-center bg-light py-5">
+            <div class="container px-md-5">
+                <div class="row align-items-center">
+
+                    <!-- Left: Text Content -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h1 class="display-4 fw-bold">Admin Dashboard</h1>
+                        <p class="lead">
+                            Manage bookings, guests, and rooms efficiently.<br>
+                            Get quick insights and control your hostel operations all in one place.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-4">
+                            <a href="#manage-bookings" class="btn btn-primary btn-lg me-3">Manage Bookings</a>
+                            <a href="#manage-guests" class="btn btn-outline-secondary btn-lg me-3">Manage Guests</a>
+                            <a href="#reports" class="btn btn-outline-info btn-lg">View Reports</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="col-md-6 text-center mt-4 mt-md-0">
+                        <img src="../image/img/hero-bg.jpg" alt="Admin Dashboard" class="img-fluid rounded-4 shadow"
+                            style="max-height: 400px;">
+                    </div>
+
+                </div>
+            </div>
         </section>
 
+
         <!-- 2. 📊 Summary Cards -->
-        <section id="summary-cards" class="mb-5">
-            <div class="row g-3">
+        <section id="container summary-cards" class="mb-5">
+            
+            <div class=" row g-3">
                 <div class="col-md-3">
                     <div class="card text-white bg-info p-3">
                         <h5>Total Rooms</h5>
