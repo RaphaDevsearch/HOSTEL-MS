@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Home - Hostel Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./custom/style/home.css">
+    <link href="../style/bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">HostelMgmt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clientNavbar"
+                    aria-controls="clientNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="clientNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#actuality">Actuality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasProfile" role="button"
+                                aria-controls="offcanvasProfile">
+                                My Profile
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- home & herro -->
+        <section class="vh-100 d-flex align-items-center bg-light py-5">
+            <div class="container px-md-5">
+                <div class="row align-items-center">
+
+                    <!-- Left: Text Content -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h1 class="display-4 fw-bold">Welcome to My Hostel</h1>
+                        <p class="lead">
+                            Comfort, Safety & Great Memories Await <br>
+                            Discover a cozy stay where comfort meets convenience. Whether you're traveling for adventure
+                            or rest, we’ve got you covered.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="mt-4">
+                            <a href="#book" class="btn btn-primary btn-lg me-3">Book Now</a>
+                            <a href="#learn" class="btn btn-outline-secondary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="col-md-6 text-center mt-4 mt-md-0">
+                        <img src="../image/img/hero-bg.jpg" alt="Hostel" class="img-fluid rounded-4 shadow">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- actuality -->
+        <section>
+            <div class="container my-5" id="actuality">
+                <h2 class="mb-4">📢 Actuality</h2>
+
+                <section class="mb-5">
+                    <h4>📅 Upcoming Events</h4>
+                    <div class="accordion" id="eventsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="eventOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEventOne" aria-expanded="true">
+                                    Maintenance Schedule
+                                </button>
+                            </h2>
+                            <div id="collapseEventOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#eventsAccordion">
+                                <div class="accordion-body">
+                                    <div class="container my-4">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                            <!-- Event 1 -->
+                                            <div class="col">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <div class="row g-0 h-100">
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">🧹 Monthly Cleaning Day</h5>
+                                                                <p class="card-text">Common areas will be cleaned
+                                                                    thoroughly. Please clear your items before 8 AM.</p>
+                                                                <p class="card-text"><small class="text-muted">🕗 Time:
+                                                                        8:00 AM – 1:00 PM</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-4 d-flex align-items-center justify-content-center bg-light">
+                                                            <div class="text-center">
+                                                                <h3 class="mb-0 text-primary">05</h3>
+                                                                <small class="text-uppercase">June</small><br>
+                                                                <span
+                                                                    class="badge bg-warning text-dark mt-2">Thursday</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Event 2 -->
+                                            <div class="col">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <div class="row g-0 h-100">
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">🚨 Fire Drill</h5>
+                                                                <p class="card-text">Mandatory fire drill. Please be
+                                                                    ready to evacuate and follow staff instructions.</p>
+                                                                <p class="card-text"><small class="text-muted">🕙 Time:
+                                                                        10:00 AM</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-4 d-flex align-items-center justify-content-center bg-light">
+                                                            <div class="text-center">
+                                                                <h3 class="mb-0 text-primary">08</h3>
+                                                                <small class="text-uppercase">June</small><br>
+                                                                <span
+                                                                    class="badge bg-danger text-light mt-2">Sunday</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Event 3 -->
+                                            <div class="col">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <div class="row g-0 h-100">
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">🎬 Movie Night</h5>
+                                                                <p class="card-text">Join us for a chill movie night.
+                                                                    Free popcorn and drinks in the common room!</p>
+                                                                <p class="card-text"><small class="text-muted">🕖 Time:
+                                                                        7:00 PM</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-4 d-flex align-items-center justify-content-center bg-light">
+                                                            <div class="text-center">
+                                                                <h3 class="mb-0 text-primary">10</h3>
+                                                                <small class="text-uppercase">June</small><br>
+                                                                <span
+                                                                    class="badge bg-info text-dark mt-2">Tuesday</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Event 4 -->
+                                            <div class="col">
+                                                <div class="card h-100 shadow-sm border-0">
+                                                    <div class="row g-0 h-100">
+                                                        <div class="col-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">🌐 Wi-Fi Maintenance</h5>
+                                                                <p class="card-text">Internet will be down temporarily
+                                                                    during the upgrade. Sorry for the inconvenience.</p>
+                                                                <p class="card-text"><small class="text-muted">🕑 Time:
+                                                                        2:00 PM – 4:00 PM</small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-4 d-flex align-items-center justify-content-center bg-light">
+                                                            <div class="text-center">
+                                                                <h3 class="mb-0 text-primary">03</h3>
+                                                                <small class="text-uppercase">June</small><br>
+                                                                <span class="badge bg-secondary mt-2">Monday</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row -->
+                                    </div> <!-- end container -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 🆕 New Services → Cards -->
+                <section class="mb-5">
+                    <h4>🆕 New Services</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">🧺 New Laundry Room</h5>
+                                    <p class="card-text">Modern laundry now open on the 1st floor for all residents.</p>
+                                    <small class="text-muted">Posted: May 15, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">📶 Upgraded Wi-Fi</h5>
+                                    <p class="card-text">All rooms now have improved high-speed Wi-Fi access.</p>
+                                    <small class="text-muted">Posted: May 14, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <!-- 💡 Important Notices → Accordion -->
+                <section class="mb-5">
+                    <h4>💡 Important Notices</h4>
+                    <div class="accordion" id="importantNotices">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeOne" aria-expanded="true"
+                                    aria-controls="collapseNoticeOne">
+                                    Quiet Hours Adjustment
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    Quiet hours now begin at <strong>9 PM</strong> instead of 10 PM. Please respect the
+                                    new schedule.<br>
+                                    <small class="text-muted">Posted: May 12, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeTwo" aria-expanded="false"
+                                    aria-controls="collapseNoticeTwo">
+                                    Laundry Room Closure
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    The laundry room will be temporarily closed for deep cleaning on <strong>May
+                                        25</strong> from 8 AM to 2 PM.<br>
+                                    <small class="text-muted">Posted: May 20, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="noticeThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNoticeThree" aria-expanded="false"
+                                    aria-controls="collapseNoticeThree">
+                                    Key Card Replacement
+                                </button>
+                            </h2>
+                            <div id="collapseNoticeThree" class="accordion-collapse collapse"
+                                data-bs-parent="#importantNotices">
+                                <div class="accordion-body">
+                                    Residents experiencing issues with their key cards can request a replacement at the
+                                    admin office from <strong>9 AM to 5 PM</strong> daily.<br>
+                                    <small class="text-muted">Posted: May 21, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 💬 Messages from Admin → Accordion -->
+                <section class="mb-5">
+                    <h4>💬 Messages from Admin</h4>
+                    <div class="accordion" id="adminMessagesAccordion">
+
+                        <!-- Message 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="adminHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#adminCollapseOne" aria-expanded="true"
+                                    aria-controls="adminCollapseOne">
+                                    Welcome to New Residents
+                                </button>
+                            </h2>
+                            <div id="adminCollapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="adminHeadingOne" data-bs-parent="#adminMessagesAccordion">
+                                <div class="accordion-body">
+                                    We’re happy to have you here. Let us know if you need help settling in!<br>
+                                    <small class="text-muted">Posted: May 10, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="adminHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#adminCollapseTwo" aria-expanded="false"
+                                    aria-controls="adminCollapseTwo">
+                                    Health Safety Notice
+                                </button>
+                            </h2>
+                            <div id="adminCollapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="adminHeadingTwo" data-bs-parent="#adminMessagesAccordion">
+                                <div class="accordion-body">
+                                    Please wear masks in common areas until further notice.<br>
+                                    <small class="text-muted">Posted: May 8, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="adminHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#adminCollapseThree" aria-expanded="false"
+                                    aria-controls="adminCollapseThree">
+                                    Admin Office Hours
+                                </button>
+                            </h2>
+                            <div id="adminCollapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="adminHeadingThree" data-bs-parent="#adminMessagesAccordion">
+                                <div class="accordion-body">
+                                    Admin office is now open from 8 AM to 6 PM on weekdays.<br>
+                                    <small class="text-muted">Posted: May 6, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <!-- ⚠️ Alerts → Card highlighted -->
+                <section class="mb-5">
+                    <h4 class="text-danger">⚠️ Alerts</h4>
+                    <div class="card border-danger text-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Water Cut Notification</h5>
+                            <p class="card-text">Water will be unavailable on May 20th from 9 AM to 12 PM.</p>
+                            <small class="text-muted">Posted: May 18, 2025</small>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+        <!-- my profil off canva -->
+
+        <!-- 📌 Offcanvas Client Profile -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProfile"
+            aria-labelledby="offcanvasProfileLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasProfileLabel">👤 My Profile</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-center">
+
+                <!-- 🖼️ Profile Picture -->
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="rounded-circle shadow mb-3" width="100" height="100" alt="Profile Picture">
+
+                <!-- 👤 Full Name + ID -->
+                <h5>John Doe</h5>
+                <p class="text-muted">ID: CL-2025-001</p>
+
+                <!-- 🔹 Personal Details -->
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <small class="text-muted">📞 Phone</small>
+                            <div>+123 456 7890</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <small class="text-muted">📧 Email</small>
+                            <div>john@example.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2 text-start">
+                    <strong>📅 Date of Birth:</strong><br>
+                    <span>1999-08-15</span>
+                </div>
+
+                <!-- 🔹 Hostel & Room Info -->
+                <div class="mb-2 text-start">
+                    <strong>🏨 Hostel:</strong> Sunrise Block<br>
+                    <strong>🚪 Room:</strong> A-104<br>
+                    <strong>🛏️ Type:</strong> Single Room<br>
+                    <strong>📅 Check-in:</strong> 2025-01-10<br>
+                    <strong>📅 Check-out:</strong> 2025-12-20<br>
+                    <strong>✅ Status:</strong> Active<br>
+                    <a href="#"> Log out</a>
+                </div>
+
+                <!-- 🔘 Action Buttons -->
+                <div class="d-grid gap-2 d-md-block mt-4 text-start">
+                    <button class="btn btn-outline-primary w-45">✏️ Edit</button>
+                    <button class="btn btn-outline-danger w-45">🔒 Change Password</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Hostel Management. All rights reserved.</p>
+            <p>
+                <a href="#" class="text-white me-3">contact@hostel.com</a>
+                <a href="#" class="text-white me-3">+1 234 567 890</a>
+                <a href="#" class="text-white">Privacy Policy</a>
+            </p>
+            <p>
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../style/bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
