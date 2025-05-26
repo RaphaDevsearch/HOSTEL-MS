@@ -73,19 +73,11 @@
                         </li>
 
                         <!-- Profile Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasProfile" role="button"
+                                aria-controls="offcanvasProfile">
                                 <i class="bi bi-person-circle"></i> Admin
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -423,66 +415,66 @@
 
         </section>
 
-        <!-- my profil off canva -->
 
-        <!-- 📌 Offcanvas Client Profile -->
+        <!-- 📌 Offcanvas Admin Profile -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProfile"
             aria-labelledby="offcanvasProfileLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasProfileLabel">👤 My Profile</h5>
+                <h5 class="offcanvas-title" id="offcanvasProfileLabel">👤 Admin Profile</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
             <div class="offcanvas-body text-center">
 
                 <!-- 🖼️ Profile Picture -->
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="rounded-circle shadow mb-3" width="100" height="100" alt="Profile Picture">
+                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3"
+                    class="rounded-circle shadow mb-3" width="100" height="100" alt="Admin Picture">
 
                 <!-- 👤 Full Name + ID -->
-                <h5>John Doe</h5>
-                <p class="text-muted">ID: CL-2025-001</p>
+                <h5>Jane Admin</h5>
+                <p class="text-muted">ID: ADM-001</p>
 
-                <!-- 🔹 Personal Details -->
+                <!-- 🔹 Contact Info -->
                 <div class="row mb-3">
                     <div class="col-6">
                         <div class="card p-2">
                             <small class="text-muted">📞 Phone</small>
-                            <div>+123 456 7890</div>
+                            <div>+123 987 6540</div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="card p-2">
                             <small class="text-muted">📧 Email</small>
-                            <div>john@example.com</div>
+                            <div>admin@admin.com</div>
                         </div>
                     </div>
                 </div>
 
+                <!-- 🔹 Admin Details -->
                 <div class="mb-2 text-start">
-                    <strong>📅 Date of Birth:</strong><br>
-                    <span>1999-08-15</span>
-                </div>
-
-                <!-- 🔹 Hostel & Room Info -->
-                <div class="mb-2 text-start">
-                    <strong>🏨 Hostel:</strong> Sunrise Block<br>
-                    <strong>🚪 Room:</strong> A-104<br>
-                    <strong>🛏️ Type:</strong> Single Room<br>
-                    <strong>📅 Check-in:</strong> 2025-01-10<br>
-                    <strong>📅 Check-out:</strong> 2025-12-20<br>
-                    <strong>✅ Status:</strong> Active<br>
-                    <a href="#"> Log out</a>
+                    <strong>🛡️ Role:</strong> Super Administrator<br>
+                    <strong>🗓️ Joined:</strong> 2022-05-01<br>
+                    <strong>⏰ Last Login:</strong> 2025-05-25 21:45<br>
+                    <strong>✅ Status:</strong> Active
                 </div>
 
                 <!-- 🔘 Action Buttons -->
                 <div class="d-grid gap-2 d-md-block mt-4 text-start">
-                    <button class="btn btn-outline-primary w-45">✏️ Edit</button>
-                    <button class="btn btn-outline-danger w-45">🔒 Change Password</button>
+                    
+                    
+                    <button type="button" class="btn btn-outline-primary">✏️ Edit Profile</button>
+                    <button type="button" class="btn btn-outline-secondary">🔐 Change Password</button>
+                    
                 </div>
+                <div class="d-grid gap-2 d-md-block mt-4 text-start">
+                    <button type="button" class="btn btn-outline-success">🚪 Logout</button>
+                </div>
+
+
 
             </div>
         </div>
+
 
 
 
