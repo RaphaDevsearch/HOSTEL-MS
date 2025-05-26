@@ -272,74 +272,105 @@
 
         <!-- 4. 📈 Charts / Reports Preview -->
         <section id="charts" class="mb-5 container">
-            <h4>📈 Reports Preview</h4>
-            <div class="row g-3">
+            <h4 class="mb-4 fw-bold">📈 Reports Preview</h4>
+            <div class="row g-4">
+                <!-- Bookings by Room Type (Bar Chart) -->
                 <div class="col-md-6">
-                    <div class="card p-3">
-                        <h6>Bookings by Room Type</h6>
-                        
-                        <canvas id="roomTypeChart" height="200"></canvas>
-                        <script>
-                            const ctx = document.getElementById('roomTypeChart').getContext('2d');
-
-                            const roomTypeChart = new Chart(ctx, {
-                                type: 'bar',
-                                data: {
-                                    labels: ['Single', 'Double', 'Suite', 'Dormitory', 'Family'],
-                                    datasets: [{
-                                        label: 'Bookings',
-                                        data: [30, 45, 15, 10, 20], // sample data
-                                        backgroundColor: [
-                                            '#17a2b8', // info
-                                            '#28a745', // success
-                                            '#ffc107', // warning
-                                            '#6c757d', // secondary
-                                            '#dc3545'  // danger
-                                        ],
-                                        borderRadius: 6
-                                    }]
-                                },
-                                options: {
-                                    responsive: true,
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true,
-                                            ticks: {
-                                                stepSize: 10
-                                            }
-                                        }
-                                    },
-                                    plugins: {
-                                        legend: {
-                                            display: false
-                                        },
-                                        tooltip: {
-                                            callbacks: {
-                                                label: function (context) {
-                                                    return context.parsed.y + ' bookings';
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            });
-                        </script>
-
+                    <div class="card p-3 shadow">
+                        <h6 class="mb-3">📊 Bookings by Room Type</h6>
+                        <div style="width: 300px; height: 300px;">
+                            <canvas id="roomTypeChart"></canvas>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Monthly Income (Pie Chart) -->
                 <div class="col-md-6">
-                    <div class="card p-3">
-                        <h6>Monthly Income</h6>
-                        <!-- Placeholder for Pie Chart -->
-                        <div
-                            style="height: 200px; background: #e9ecef; display:flex; align-items:center; justify-content:center; color:#6c757d;">
-                            [Pie Chart Here]
+                    <div class="card p-3 shadow">
+                        <h6 class="mb-3">💰 Monthly Income</h6>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div style="width: 300px; height: 300px;">
+                                <canvas id="incomeChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
         </section>
+
+        <!-- Chart Scripts -->
+        <script>
+            // Bookings by Room Type Chart
+            const ctx = document.getElementById('roomTypeChart').getContext('2d');
+            const roomTypeChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Single', 'Double', 'Suite', 'Dormitory', 'Family'],
+                    datasets: [{
+                        label: 'Bookings',
+                        data: [30, 45, 15, 10, 20],
+                        backgroundColor: [
+                            '#17a2b8', '#28a745', '#ffc107', '#6c757d', '#dc3545'
+                        ],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { stepSize: 10 }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.parsed.y + ' bookings';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Monthly Income Pie Chart
+            const incomeCtx = document.getElementById('incomeChart').getContext('2d');
+            const incomeChart = new Chart(incomeCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Room Bookings', 'Restaurant', 'Laundry', 'Others'],
+                    datasets: [{
+                        label: 'Income',
+                        data: [6000, 2000, 800, 400],
+                        backgroundColor: ['#28a745', '#ffc107', '#17a2b8', '#6c757d']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return `${context.label}: $${context.parsed}`;
+                                }
+                            }
+                        },
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 12,
+                                padding: 15
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+
 
         <!-- 5. 🔗 Quick Access -->
         <section id="quick-access" class="mb-5 container">
@@ -441,7 +472,7 @@
     <!-- Bootstrap JS -->
     <script src="../style/bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
     <!-- chart -->
-    
+
 
 </body>
 
