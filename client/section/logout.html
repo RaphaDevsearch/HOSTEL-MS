@@ -1,5 +1,68 @@
-<section id="hero" class="py-5 text-center bg-primary text-white">
-    <div class="container">
-        <h1 class="display-4">Log out</h1>
+<section id="hero" class="py-5 text-center  text-white">
+    <!-- Account Summary Block -->
+    <div class="card text-center shadow rounded-4 p-4 border-0"
+        style="background-color: #17b1e096; max-width: 600px; margin: auto;">
+        <div class="d-flex justify-content-between align-items-start">
+            <div>
+                <h4 class="fw-bold mb-0">Raphael</h4>
+                <p class="text-uppercase small">Randrianantoanina</p>
+            </div>
+            <button class="btn btn-danger btn-sm px-3 text-center" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                <i class="bi bi-box-arrow-right fs-2"></i>
+                log out
+            </button>
+        </div>
+
+        <div class="my-3">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="rounded-circle border border-white shadow" alt="User" width="200" height="200">
+        </div>
+
+        <div class="border-top pt-3">
+            <div class="row text-center">
+
+                <!-- Column 1 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 border-end">
+                    <i class="bi bi-house-door-fill fs-2"></i>
+                    <p class="mb-0">FLOOR-4 608</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 border-end">
+                    <i class="bi bi-envelope fs-2"></i>
+                    <p class="mb-0">mizabienvenu@gmail.com</p>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-md-4">
+                    <i class="bi bi-person-badge fs-2"></i>
+                    <p class="mb-0">24UG51054</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Log Out</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="text-center mt-3">
+                        <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <span class="mx-2">|</span>
+                        <button class="btn btn-outline-success">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
