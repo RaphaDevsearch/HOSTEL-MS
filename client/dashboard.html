@@ -123,19 +123,71 @@
 
     <!-- Main content -->
     <div class="content" id="main-content">
-        <h1>Welcome to Dashboard for clients
-        </h1>
-        <p class="lead">
-            🏠 Dashboard
-            Show summary and quick links.
-            Welcome message: "Hello, [Client Name]"
-            Summary cards (Bootstrap cards grid):
-            🛏️ Current Room (type, number)
-            💳 Payment Status (Paid / Pending)
-            📅 Next Check-in/out
-            🔔 Notifications (Bootstrap alerts or toast)
-            🔗 Quick buttons: Book Room | View Payments | Contact Support
-        </p>
+        <!-- Dashboard Header -->
+        <div class="container mt-4">
+            <h2 class="mb-4">🏠 Dashboard</h2>
+
+            <!-- Welcome Message -->
+            <div class="alert alert-primary" role="alert">
+                Hello, <strong>Jean-3</strong> 👋
+            </div>
+
+            <!-- Row 1: Summary Cards -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🛏️ Current Room</h5>
+                            <p class="card-text">Type: Deluxe<br>Number: 203</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">💳 Payment Status</h5>
+                            <p class="card-text text-success">Paid</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📅 Next Check-in/out</h5>
+                            <p class="card-text">Check-out: Jun 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🔔 Notifications</h5>
+                            <p class="card-text">2 New Alerts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Notifications and Quick Buttons -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="alert alert-warning" role="alert">
+                        ⚠️ Your next payment is due in 3 days.
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        ℹ️ Reception hours have changed for this week.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-primary">Book Room</a>
+                        <a href="#" class="btn btn-outline-secondary">View Payments</a>
+                        <a href="#" class="btn btn-outline-info">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Bootstrap JS -->
