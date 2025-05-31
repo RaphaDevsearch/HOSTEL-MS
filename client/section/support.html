@@ -24,7 +24,7 @@
             </div>
         </header>
     </div>
-    <div class="container py-5">
+    <div class="container  py-5">
         <!-- Row 1: Contact and Info -->
         <div class="row g-4 mb-4">
             <!-- Contact Form -->
@@ -135,6 +135,38 @@
                     </div>
 
                     <!-- Add more FAQs as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Title Button at bottom-right -->
+        <button
+            class="btn btn-success rounded-circle position-absolute d-flex align-items-center justify-content-center shadow shadow-3"
+            style="width: 60px; height: 60px; bottom: 1rem; right: 1rem;" data-bs-toggle="modal"
+            data-bs-target="#chatModal">
+            💬
+        </button>
+        <!-- Chat Modal -->
+        <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title" id="chatModalLabel">💬 Chat with AI</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="chatMessage" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="chatMessage" rows="4"
+                                    placeholder="Type your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
