@@ -113,28 +113,84 @@
             <!-- Book Now Modal -->
             <div class="modal fade" id="bookNowModal" tabindex="-1" aria-labelledby="bookNowModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h5 class="modal-title" id="bookNowModalLabel">Booking</h5>
+                            <h5 class="modal-title" id="bookNowModalLabel">Book a Room</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <!-- Modal Body -->
-                        <div class="modal-body text-center">
-                            <p class="fs-5">Booking Now...</p>
+                        <div class="modal-body">
+                            <form>
+                                <!-- Client Info -->
+                                <div class="mb-3">
+                                    <label class="form-label">Client Name</label>
+                                    <input type="text" class="form-control" value="Jean Dupont" disabled>
+                                </div>
+
+                                <!-- Room Type -->
+                                <div class="mb-3">
+                                    <label class="form-label">Select Room Type</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Choose...</option>
+                                        <option>Single Room</option>
+                                        <option>Double Room</option>
+                                        <option>Deluxe Room</option>
+                                        <option>Suite</option>
+                                    </select>
+                                </div>
+
+                                <!-- Dates -->
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Check-in Date</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Check-out Date</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- Guests -->
+                                <div class="mb-3">
+                                    <label class="form-label">Number of Guests</label>
+                                    <input type="number" class="form-control" min="1" value="1">
+                                </div>
+
+                                <!-- Special Request -->
+                                <div class="mb-3">
+                                    <label class="form-label">Special Requests</label>
+                                    <textarea class="form-control" rows="2"
+                                        placeholder="Any notes or requests..."></textarea>
+                                </div>
+
+                                <!-- Summary -->
+                                <div class="bg-light p-3 rounded mb-3">
+                                    <h6 class="mb-2">Summary</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>🛏️ <strong>Room:</strong> Deluxe Room</li>
+                                        <li>📅 <strong>Stay:</strong> 2 Nights</li>
+                                        <li>💰 <strong>Price:</strong> $60</li>
+                                        <li>💳 <strong>Payment Status:</strong> Pending</li>
+                                    </ul>
+                                </div>
+                            </form>
                         </div>
 
                         <!-- Modal Footer -->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-success">Confirm Booking</button>
                         </div>
 
                     </div>
                 </div>
             </div>
+
 
 
             <div class="col-md-4">
