@@ -2,35 +2,44 @@
 
     <div class="container mt-4">
         <h2 class="lead mb-0">Hello <span class="display-6 text-warning">Jean</span></h2>
+
+        <div class="row">
+            <div class="col-md-6"> <!-- You can use col-4, col-3, etc. -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="find hostel ..." aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Section 2: Filter -->
     <div class="container mt-4">
-        <div class="card shadow-sm p-3 border-0">
-            <h5 class="mb-3">Filter Rooms</h5>
-            <form class="row g-3">
-                <div class="col-md-4">
-                    <label for="roomType" class="form-label">Room Type</label>
-                    <select id="roomType" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>Single</option>
-                        <option>Double</option>
-                        <option>Deluxe</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="checkin" class="form-label">Check-in Date</label>
-                    <input type="date" id="checkin" class="form-control" />
-                </div>
-                <div class="col-md-3">
-                    <label for="checkout" class="form-label">Check-out Date</label>
-                    <input type="date" id="checkout" class="form-control" />
-                </div>
-                <div class="col-md-2 d-flex align-items-end">
-                    <button type="submit" class="btn btn-primary w-100">Search</button>
-                </div>
-            </form>
-        </div>
+        <h5 class="mb-3">Filter Rooms</h5>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="roomType" class="form-label">Room Type</label>
+                <select id="roomType" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                    <option>Deluxe</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="checkin" class="form-label">Check-in Date</label>
+                <input type="date" id="checkin" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <label for="checkout" class="form-label">Check-out Date</label>
+                <input type="date" id="checkout" class="form-control" />
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">Search</button>
+            </div>
+        </form>
     </div>
 
     <!-- Section 3: Body - Room List -->
