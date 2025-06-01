@@ -58,12 +58,84 @@
                         <p class="card-text">Spacious room with AC, Wi-Fi, and private bathroom.</p>
                         <p><strong>Price:</strong> $30/night</p>
                         <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-outline-primary w-50">Details</a>
-                            <a href="#" class="btn btn-success w-50">Book Now</a>
+                            <a href="#" class="btn btn-outline-primary w-50" data-bs-toggle="modal"
+                                data-bs-target="#roomDetailsModal">Details</a>
+                            <a href="#" class="btn btn-success w-50" data-bs-toggle="modal"
+                                data-bs-target="#bookNowModal">Book Now</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Room Details Modal -->
+            <div class="modal fade" id="roomDetailsModal" tabindex="-1" aria-labelledby="roomDetailsModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="roomDetailsModalLabel">Deluxe Room Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <img src="https://placehold.co/800x400" class="img-fluid rounded mb-3" alt="Room Image">
+
+                            <p><strong>Description:</strong> Spacious and stylish room ideal for relaxation, equipped
+                                with all the modern facilities to make your stay comfortable.</p>
+
+                            <p><strong>Amenities:</strong></p>
+                            <ul class="list-unstyled ms-3">
+                                <li>• Free Wi-Fi</li>
+                                <li>• Air Conditioning</li>
+                                <li>• Private Bathroom</li>
+                                <li>• Desk & Chair</li>
+                                <li>• Mini Fridge</li>
+                            </ul>
+
+                            <p><strong>Capacity:</strong> 2 Adults</p>
+                            <p><strong>Price:</strong> $30 per night</p>
+                            <p><strong>Check-in:</strong> 12:00 PM &nbsp;&nbsp; <strong>Check-out:</strong> 10:00 AM</p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#bookNowModal">Book Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Now Modal -->
+            <div class="modal fade" id="bookNowModal" tabindex="-1" aria-labelledby="bookNowModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookNowModalLabel">Booking</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body text-center">
+                            <p class="fs-5">Booking Now...</p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
             <div class="col-md-4">
                 <div class="card shadow-sm">
